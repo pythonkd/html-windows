@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: #000;
+            /*margin: 0px auto;*/
+        }
+        div:hover{
+            background: white;
+            /*text-align: center;*/
+            line-height: 200px;
+            /*margin: 0px auto;*/
+        }
+        div:after{
+            content: '点我啊';
+            color: red;
+        }
+        .link-1{
+            margin: 0px auto;
+            /*text-align: center;*/
+            /*text-decoration: none;*/
+        }
+    </style>
+</head>
+<body>
+<script>
+    var a=1, b=2, c=3
+    alert(b)
+</script>
+<div onclick="alert('行间样式生效了')"></div>
+<a class="link-1" href="javascript:alert('我是啊')">点我</a>
+<a href="javascript:void(0)" onclick="alert('woyeshia')">zailai</a>
+</body>
+</html>

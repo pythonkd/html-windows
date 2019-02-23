@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float1</title>
+    <style >
+        *{margin: 0px;
+            padding: 0px;}
+        span{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        .box1{
+            width: 500px;
+            /*height: 500px;*/
+            background: red;
+            border: green dotted 2px;
+            /*float: left;*/
+            overflow: hidden;
+        }
+        .box1:after{
+            clear: both;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: #666;
+            float: right;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background: #489;
+            float: left;
+        }
+
+        span{
+            color: green;
+
+        }
+    </style>
+</head>
+<body>
+<span>这是span</span>123456
+<div class="box1" style="width: 5000px; height: 5000px;">box1
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+</div>
+</body>
+</html>

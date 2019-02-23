@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+    <form action="" method="get" enctype="multipart/form-data">
+        用户名：<input type="text" name="username" value="" placeholder="请输入用户名"> <br>
+        密码：<input type="password" name="password" placeholder="请输入密码" value=""><br>
+        性别:<input type="radio" name="gender" value="0" checked>男
+             <input type="radio" name="gender" value="1">女 <br>
+        爱好：<br>
+            <input type="checkbox" name="habit[]" value="0"> 篮球 <br>
+            <input type="checkbox" name="habit[]" value="1"> 足球 <br>
+            <input type="checkbox" name="habit[]" value="2"> 乒乓球 <br>
+            <input type="checkbox" name="habit[]" value="3">其他 <br>
+        学历：<select name="education" >
+        <option value="1">Primary School</option>
+        <option value="2">Secondary School</option>
+        <option value="3">High School</option>
+        <option value="4">University</option>
+        </select> <br>
+        请选择上传的文件：<input type="file" name="file"><br>
+        请输入个人说明：<br>
+        <textarea name="other" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="确定"><br>
+        <button>提交</button>
+        <input type="hidden" name="id" value="0">
+    </form>
+
+</body>
+</html>
